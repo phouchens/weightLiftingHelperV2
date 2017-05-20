@@ -1,4 +1,6 @@
-export interface workUnit {
-    numberLabel : number;
-    percentageValue: number;
+export class workUnit {
+    constructor(
+        public numberLabel : number,
+        public percentageValue: number
+    ) { }
 }
