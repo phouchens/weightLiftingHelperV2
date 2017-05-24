@@ -1,3 +1,4 @@
+import { MaxInput } from './../components/max-input/max-input';
 import { PercentageForm } from './../components/percentage-form/percentage-form';
 import { StrengthPercentagesPage } from './../pages/strength-percentages/strength-percentages';
 import { NgModule, ErrorHandler } from '@angular/core';
@@ -17,7 +18,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     StrengthPercentagesPage,
     AboutPage,
     TabsPage,
-    PercentageForm
+    PercentageForm,
+    MaxInput
   ],
   imports: [
     BrowserModule,

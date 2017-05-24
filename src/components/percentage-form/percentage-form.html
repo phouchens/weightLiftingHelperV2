@@ -1,11 +1,8 @@
-<ion-item> 
-<ion-label floating>Enter a weight</ion-label>
-<ion-input type="number" id="max-input" [{ngModel}]="max" ></ion-input>
-</ion-item>
-
 <ion-list inset >
-  <ion-item *ngFor="let unit of units" >
+  <h1>{{units}}</h1>
+  <!--<ion-item *ngFor="let unit of units" >
     {{unit.numberLabel | number: '2.0'}}% is: 
     <span><strong>{{unit.percentageValue | number: '1.2'}}</strong></span>
-  </ion-item>
+  </ion-item>-->
 </ion-list> 
+
