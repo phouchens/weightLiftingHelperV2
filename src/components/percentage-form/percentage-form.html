@@ -1,8 +1,6 @@
-<ion-list inset >
-  <h1>{{units}}</h1>
-  <!--<ion-item *ngFor="let unit of units" >
-    {{unit.numberLabel | number: '2.0'}}% is: 
-    <span><strong>{{unit.percentageValue | number: '1.2'}}</strong></span>
-  </ion-item>-->
-</ion-list> 
-
+<ion-list inset *ngIf="max">
+  <ion-item *ngFor="let unit of units">
+    {{unit.numberLabel | number: '2.0'}}% is:
+    <span><strong>{{unit.percentageValue * max | number: '1.2'}}</strong></span>
+  </ion-item>
+</ion-list>
