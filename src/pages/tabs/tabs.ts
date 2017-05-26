@@ -1,4 +1,6 @@
+import { OneRepMaxPage } from './../one-rep-max/one-rep-max';
 import { StrengthPercentagesPage } from './../strength-percentages/strength-percentages';
+
 import { Component } from '@angular/core';
 
 import { AboutPage } from '../about/about';
@@ -10,10 +12,7 @@ import { AboutPage } from '../about/about';
 export class TabsPage {
 
   tab1Root = StrengthPercentagesPage;
-  tab2Root = AboutPage;
-  
-
-  constructor() {
-
-  }
+  tab2Root = OneRepMaxPage;
+  tab3Root = AboutPage;
+  constructor() {}
 }

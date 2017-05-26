@@ -1,3 +1,4 @@
+import { OneRepMaxPage } from './../pages/one-rep-max/one-rep-max';
 import { MaxInput } from './../components/max-input/max-input';
 import { PercentageForm } from './../components/percentage-form/percentage-form';
 import { StrengthPercentagesPage } from './../pages/strength-percentages/strength-percentages';
@@ -18,6 +19,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     StrengthPercentagesPage,
     AboutPage,
     TabsPage,
+    OneRepMaxPage,
     PercentageForm,
     MaxInput
   ],
@@ -31,6 +33,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     AboutPage,
     StrengthPercentagesPage,
+    OneRepMaxPage,
     TabsPage
   ],
   providers: [

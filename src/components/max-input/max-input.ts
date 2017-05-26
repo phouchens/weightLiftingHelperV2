@@ -22,5 +22,5 @@ export class MaxInput {
     this.max = this.max * 2.2;
   }
 
-  
+  //Total Weight Lifted in Pounds / (1.0278 - (Number of Repetitions x 0.0278)) = ~1RM
 }
