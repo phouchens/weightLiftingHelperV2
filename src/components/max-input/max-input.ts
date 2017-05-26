@@ -7,6 +7,20 @@ import { Component } from '@angular/core';
 
 export class MaxInput {
   max: number;
+  weight: boolean;
+
   constructor() {}
 
+  ngOnInit() {
+    console.log(this.weight);
+  }
+  convertToKilos(max: number) {
+    this.max = this.max / 2.2;
+  }
+
+  convertToPounds(max: number) {
+    this.max = this.max * 2.2;
+  }
+
+  
 }

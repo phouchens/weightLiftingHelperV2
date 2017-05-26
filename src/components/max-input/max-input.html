@@ -3,6 +3,16 @@
   <ion-label floating>Enter a weight</ion-label>
   <ion-input type="number" id="max-input" [(ngModel)]="max" ></ion-input>
 </ion-item>
+<ion-list radio-group [(ngModel)]="weight">
+ <ion-item>
+    <ion-label>lbs</ion-label>
+    <ion-radio checked="true" value="lbs" (click)="convertToPounds()"></ion-radio>
+  </ion-item>
+  <ion-item>
+    <ion-label>kgs</ion-label>
+    <ion-radio  value="kgs" (click)="convertToKilos()"></ion-radio>
+  </ion-item>
+</ion-list>
   <percentage-form [max]="max"></percentage-form>
 
   
