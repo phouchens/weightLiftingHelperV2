@@ -14,5 +14,4 @@ export class OneRepMaxPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad OneRepMax');
   }
-
 }
