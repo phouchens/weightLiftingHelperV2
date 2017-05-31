@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToastController } from 'ionic-angular';
 
 @Component({
   selector: 'max-calculator',
@@ -6,13 +7,26 @@ import { Component } from '@angular/core';
 })
 export class MaxCalculator {
   weightLifted: number;
-  reps: number;
+  reps: number = 1;
   oneRepMax: number;
 
-  constructor() { }
+  constructor(public toastCtrl: ToastController) { }
 
-  calculateOneRepMax(weightLifted:number, reps:number): number{
-  return weightLifted/ (1.0278 -(reps * 0.0278));
-  // Total Weight Lifted in Pounds / (1.0278 - (Number of Repetitions x 0.0278)) = ~1RM
+  calculateOneRepMax(): void{
+  if(this.weightLifted < 1 || this.weightLifted === undefined) {
+    let toast = this.toastCtrl.create({
+      message: "Please enter a weight lifted.",
+      duration: 10000,
+      showCloseButton: true,
+      position: "top",
+      closeButtonText: 'Got it!',
+      dismissOnPageChange: true,
+      cssClass: "yourCssClassName",
+    });
+    toast.present();
+    return;
   }
+  this.oneRepMax = Math.round(this.weightLifted/ (1.0278 -(this.reps * 0.0278)));
+  }
+
 }

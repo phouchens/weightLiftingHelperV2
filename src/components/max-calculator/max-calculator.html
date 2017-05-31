@@ -7,7 +7,7 @@
   <ion-item>
     <ion-label>REPS</ion-label>
     <ion-select [(ngModel)]="reps" interface="popover">
-      <ion-option value="1">1</ion-option>
+      <ion-option selected value="1">1</ion-option>
       <ion-option value="2">2</ion-option>
       <ion-option value="3">3</ion-option>
       <ion-option value="4">4</ion-option>
@@ -16,8 +16,8 @@
     </ion-select>
   </ion-item>
 </ion-list>
-<button ion-button full>CALCULATE</button>
+<button ion-button full id="maxButton" (click)="calculateOneRepMax()">CALCULATE</button>
 
 <ion-item>
-  <div>YOUR ONE-REP MAX: </div>
+  <div>YOUR ONE-REP MAX:  {{oneRepMax }}</div>
 </ion-item>
