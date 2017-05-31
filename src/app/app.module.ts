@@ -1,3 +1,4 @@
+import { MaxCalculator } from './../components/max-calculator/max-calculator';
 import { OneRepMaxPage } from './../pages/one-rep-max/one-rep-max';
 import { MaxInput } from './../components/max-input/max-input';
 import { PercentageForm } from './../components/percentage-form/percentage-form';
@@ -21,7 +22,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage,
     OneRepMaxPage,
     PercentageForm,
-    MaxInput
+    MaxInput,
+    MaxCalculator
   ],
   imports: [
     BrowserModule,

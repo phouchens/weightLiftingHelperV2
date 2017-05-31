@@ -1,4 +1,23 @@
-<!-- Generated template for the MaxCalculator component -->
-<div>
-  {{text}}
-</div>
+<ion-item>
+  <ion-label floating>WEIGHT LIFTED</ion-label>
+  <ion-input type="number" id="weightLifted" [(ngModel)]="weightLifted"></ion-input>
+</ion-item>
+
+<ion-list>
+  <ion-item>
+    <ion-label>REPS</ion-label>
+    <ion-select [(ngModel)]="reps" interface="popover">
+      <ion-option value="1">1</ion-option>
+      <ion-option value="2">2</ion-option>
+      <ion-option value="3">3</ion-option>
+      <ion-option value="4">4</ion-option>
+      <ion-option value="5">5</ion-option>
+      <ion-option value="6">6</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+<button ion-button full>CALCULATE</button>
+
+<ion-item>
+  <div>YOUR ONE-REP MAX: </div>
+</ion-item>
