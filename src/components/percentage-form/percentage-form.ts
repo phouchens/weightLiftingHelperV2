@@ -1,6 +1,6 @@
 import { UNITS } from './../../models/percent-structure';
 import { workUnit } from './../../models/workUnit';
-import { Component,Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'percentage-form',
@@ -10,6 +10,6 @@ import { Component,Input } from '@angular/core';
 export class PercentageForm {
   units: workUnit[] = UNITS;
   @Input() max: number;
-  constructor() {}
+  constructor() { }
 
 }

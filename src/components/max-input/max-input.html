@@ -1,19 +1,17 @@
 <ion-label>SELECT MEASUREMENT UNIT</ion-label>
 <ion-list radio-group [(ngModel)]="weight">
- <ion-item>
+  <ion-item>
     <ion-label>LBS</ion-label>
-    <ion-radio value="lbs" (click)="convertToPounds()" ></ion-radio>
+    <ion-radio value="lbs" (click)="convertToPounds()"></ion-radio>
   </ion-item>
   <ion-item>
     <ion-label>KGS</ion-label>
     <ion-radio checked="true" value="kgs" (click)="convertToKilos()"></ion-radio>
   </ion-item>
 </ion-list>
-<ion-item> 
+<ion-item>
   <ion-label floating>ENTER YOUR MAX WEIGHT</ion-label>
-  <ion-input type="number" id="max-input" [(ngModel)]="max" ></ion-input>
+  <ion-input type="number" id="max-input" [(ngModel)]="max"></ion-input>
 </ion-item>
 
-  <percentage-form [max]="max"></percentage-form>
-
-  
+<percentage-form [max]="max"></percentage-form>

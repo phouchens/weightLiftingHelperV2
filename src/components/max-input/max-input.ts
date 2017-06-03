@@ -9,7 +9,7 @@ export class MaxInput {
   max: number;
   weight: boolean;
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit() {
     console.log(this.weight);
